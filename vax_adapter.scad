@@ -1,0 +1,38 @@
+module vax_end(){    
+    translate([0,0,0]){
+        cylinder(13,41/2,41/2);
+    }
+    translate([0,0,11]){
+        cylinder(2,41/2,43/2);  
+    }
+    translate([0,0,13]){
+        cylinder(6,38/2,38/2);  
+    }
+    translate([0,0,19]){
+        cylinder(6,38/2,36/2);  
+    }
+    translate([0,0,21]){
+        cylinder(7,36/2,50/2);
+    } 
+    translate([0,0,28]){
+        cylinder(17,50/2,50/2);
+    }  
+    translate([0,0,28+17]){
+        cylinder(17,50/2,50/2);
+    }  
+}
+difference(){
+    vax_end(); 
+    translate([0,0,-1]){ 
+        cylinder(28,33/2,33/2); 
+    }
+    translate([0,0,19]){ 
+        cylinder(27,33/2,43/2); 
+    }
+    translate([0,0,19+26.9]){ 
+        cylinder(27,43/2,43/2); 
+    }
+    translate([0,-50,-10]){ 
+        //cube([100,100,100]);
+    }
+}
